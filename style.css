@@ -1,0 +1,699 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.back{
+    background-image:url('images/background.png') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height:750px;
+    background-position-y: -45px;
+}
+/* Le premier partie a commence ICI */
+
+.left{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 280px;
+    margin-left: 10px;
+    float: left;
+    z-index: 2;
+}
+.left img{
+    margin-bottom: 30px;
+    width: 20px;
+    transition: 2s;
+}
+
+.left img:hover{
+    transform: rotate(360deg);
+}
+
+.bar{
+    margin-left: 100px;
+   
+}
+.rako{
+    margin-top: 20px;
+    width: 100px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.menu{
+    position: fixed;
+    right: 20px;
+    top: 30px;
+    width: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.menu.active{
+    transform: translateX(-200px);
+}
+
+.header{
+    position: fixed;
+    right:0;
+    text-align: right;
+    background-color: rgb(248, 187, 187);
+    bottom: 0;
+    top: 0;
+    text-align: center;
+    padding-top:100px;
+    width: 200px;
+    transform: translateX(200px);
+    transition:all 0.5s;
+}
+.header.active{
+    transform: translateX(0);
+}
+.header ul{
+    list-style-type: none;
+}
+.header li{
+    padding: 30px;
+}
+.header li:hover{
+    background-color: rgb(220, 93, 93);
+   cursor: pointer;
+}
+.header li a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+.header li:hover a{
+    color: white;
+ 
+}
+
+
+.first .txt{
+    width: 350px;
+    margin-left: 100px;
+    margin-top: 140px;
+}
+.first .txt div{
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 0, 255, 0.545);
+    margin: 20px 0;
+}
+.first .txt p{
+    font-size: 15px;
+    color: gray;
+}
+
+.first .txt button{
+    background: none;
+    border: 2px solid rgba(255, 0, 255, 0.537);
+    padding: 17px 40px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.first .txt button:hover{
+    background-color:rgba(255, 0, 255, 0.184) ;
+}
+
+.first .txt div:last-of-type{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 0, 255, 0.545);
+    margin-top: 35px;
+}
+
+.first .txt .hr1{
+    width: 65px;
+    border: 1px solid rgba(255, 0, 255, 0.537);
+}
+.first .txt .hr2{
+    width: 95px;
+    border: 1px solid rgba(255, 0, 255, 0.537);
+}
+
+
+
+
+/* La dexieme partie a commence ICI */
+
+.second {
+    margin-top: 10px;
+}
+
+.second .image{
+    float: left;
+    width: 50%;
+}
+.second .image img{
+    width: 100%;
+}
+.second .txt{
+    width: 30%;
+    float: right;
+    margin-top: 150px;
+    text-align: right;
+    margin-right: 70px;
+}
+
+.second .txt div{
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 0, 255, 0.545);
+    float: right;
+}
+
+.second .txt h1{
+    margin-bottom: 15px;
+}
+
+.second .txt p{
+    margin-top: 50px;
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 32px;
+}
+
+.second .txt div:last-of-type{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 0, 255, 0.545);
+}
+
+.second .txt .hr1{
+    width: 65px;
+    border: 1px solid rgba(255, 0, 255, 0.537);
+    float: right;    
+}
+.second .txt .hr2{
+    width: 95px;
+    border: 1px solid rgba(255, 0, 255, 0.537);
+    float: right;
+}
+
+.second .txt h3{
+    font-size: 25px;
+    font-family: 'Labrada', serif;
+    font-style: italic;
+}
+.second .txt h5{
+    font-size: 17px;
+    margin-top: 2px;
+}
+
+
+
+/* Le center de page a commence ICI */
+
+.center{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top:750px;
+}
+.center div img{
+    width: 50%;
+}
+
+.center div p{
+   color: gray;
+   margin-top: 10px;
+}
+
+
+
+
+/* Le getstart a commence ICI */
+
+.getstart {
+ margin-bottom: 90px;
+ margin-top: 80px;
+ display: flex;
+ justify-content: center;
+ 
+}
+
+.under{
+    margin-bottom: 10px;
+
+}
+
+.under div{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 0, 255, 0.545);
+    float: right;
+}
+
+.under .hr1{
+    width: 65px;
+    border: 1px solid rgba(255, 0, 255, 0.537);
+    float: right;
+    margin-top: 8px;
+
+
+}
+.under .hr2{
+    width: 95px;
+    border: 1px solid rgba(255, 0, 255, 0.537);
+    float: right;
+    margin-top: 8px;
+
+}
+.btm button{
+    float: right;
+    background: none;
+    border: 2px solid rgba(255, 0, 255, 0.537);
+    padding: 17px 40px;
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+.btm button:hover{
+    background-color:rgba(255, 0, 255, 0.184) ;
+}
+
+
+
+/* third a commence ICI */
+.third{
+    margin-top: 200px;
+    margin-bottom: 170px;
+
+}
+.third .image img{
+    width: 40%;
+    float: right;
+    margin: 0px 70px;
+}
+.third .txt{
+    width: 40%;
+    margin-left: 100px;
+    margin-top: 0px;
+    float: left;
+}
+.third .txt div{
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 0, 255, 0.545);
+    margin: 20px 0;
+}
+.third .txt p{
+    font-size: 15px;
+    color: gray;
+}
+
+.third .txt button{
+    background: none;
+    border: 2px solid rgba(255, 0, 255, 0.537);
+    padding: 17px 40px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+.third .txt button:hover{
+    background-color:rgba(255, 0, 255, 0.184) ;
+}
+
+.first .txt div:last-of-type{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 0, 255, 0.545);
+    margin-top: 5px;
+}
+
+.third .txt .hr1{
+    width: 65px;
+    border: 1px solid rgba(255, 0, 255, 0.537);
+}
+.third .txt .hr2{
+    width: 95px;
+    border: 1px solid rgba(255, 0, 255, 0.537);
+    margin-top: 13px;
+}
+
+
+
+
+
+
+/* fourt a commence ICI */
+.fourt{
+    margin-bottom: 1450px;
+    margin-top: 700px;
+}
+
+.fourt .image{
+    float: left;
+    width: 50%;
+}
+.fourt .image img{
+    width: 100%;
+}
+.fourt .txt{
+    width: 30%;
+    float: right;
+    text-align: right;
+    margin-right: 90px;
+    margin-top: 80px;
+}
+
+.fourt .txt div{
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 0, 255, 0.545);
+    float: right;
+}
+
+.fourt .txt h1{
+    margin-bottom: 15px;
+}
+
+.fourt .txt p{
+    margin-top: 50px;
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 32px;
+}
+
+.fourt .txt button{
+    background: none;
+    border: 2px solid rgba(255, 0, 255, 0.537);
+    padding: 17px 40px;
+    float: right;
+    cursor: pointer;
+}
+.fourt .txt button:hover{
+    background-color:rgba(255, 0, 255, 0.184) ;
+}
+
+.fourt .txt div:last-of-type{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 0, 255, 0.545);
+}
+
+.fourt .txt .hr1{
+    width: 65px;
+    border: 1px solid rgba(255, 0, 255, 0.537);
+    float: right;    
+}
+.fourt .txt .hr2{
+    width: 95px;
+    border: 1px solid rgba(255, 0, 255, 0.537);
+    float: right;
+}
+
+.fourt .txt h3{
+    font-size: 25px;
+    font-family: 'Labrada', serif;
+    font-style: italic;
+}
+.fourt .txt h5{
+    font-size: 17px;
+    margin-top: 2px;
+}
+
+
+/* Last a commence ICI */
+.last{
+    margin-bottom: 2000px;
+}
+.last .right{
+    width: 40%;
+    float: right;
+}
+.last .right img{
+    width: 100%;
+    padding-right:35px ;
+}
+
+.last .contact{
+    width: 50%;
+    margin-left: 100px;
+    float: left;
+}
+.last .contact form{
+    margin-top: 50px;
+    width: 60%;
+}
+
+.last .contact h1{
+    font-size: 40px;
+}
+
+.last .contact form input{
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 6px;
+    border: 1px solid rgba(255, 0, 255, 0.537);
+    outline: none;
+    
+}
+.last .contact form button{
+    width:163px;
+    background: none;
+    border: 2px solid rgba(255, 0, 255, 0.537);
+    padding: 15px;
+    font-weight: bold;
+    margin-right: 12px; 
+    cursor: pointer;
+}
+
+.last .contact form button:hover{
+    background-color:rgba(255, 0, 255, 0.184) ;
+}
+
+.last .contact div{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 0, 255, 0.545);
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+.last .contact .hr1{
+    width: 65px;
+    border: 1px solid rgba(255, 0, 255, 0.29);
+}
+
+
+.last .contact .hr2{
+    width: 95px;
+    border: 1px solid rgba(255, 0, 255, 0.29);
+}
+
+
+/* center a commence ICI */
+
+.hr3{
+   border: 1px solid gray;
+   width: 87%;
+   margin-bottom: 30px;
+}
+
+/* footer a commence ICI */
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+footer div .p3{
+    color: rgba(255, 0, 255, 0.481);
+}
+
+footer div img{
+    width: 100px;
+}
+
+footer div button{
+    width: 100px;
+    background: none;
+    border: 2px solid rgba(255, 0, 255, 0.537);
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer div button:hover{
+    background-color:rgba(255, 0, 255, 0.184) ;
+}
+
+
+@media only screen and (max-width:900px){
+    .rako{
+        margin-top: 40px;
+        width: 140px;
+        margin-bottom: -100px;
+        margin-left: -40px;
+    }
+    .menu{
+        margin-left: 160px;
+        margin-top: 75px;
+        width: 35px;
+        cursor: pointer;
+    }
+    .first .txt{
+        width: 100%;
+        margin-left: 50px;
+        margin-top: 150px;
+    } 
+    .second {
+        margin-top: -60px;
+        margin-bottom: 800px;
+    }
+    .second .image{
+        width: 400px;
+    }
+    .second .txt{
+        width: 100%;
+        float: left;
+        margin-top:0;
+        text-align: left;
+        margin-right: 0px;
+        margin-left: 50px;
+    }
+    .second .txt div{
+        width: 12px;
+        height: 12px;
+        background-color: rgba(255, 0, 255, 0.545);
+        float: left;
+    }.second .txt .hr1{
+        float: left;    
+    }
+    .second .txt .hr2{
+        float: left;
+    }
+    .second .txt h3{
+        margin-top: 6px;
+    }
+    .second .txt h5{
+        margin-top: 4px;
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 50px;
+    }
+    .center div img{
+        width: 80%;
+    }
+    .center div p{
+        margin-top: 0;
+        margin-bottom: 15px;
+     }
+     .third{
+        margin-top: 30px;
+    }
+    .third .image img{
+        width: 100%;
+        float:none;
+        margin: auto;
+        margin-left: 20px;
+    }
+    .third .txt{
+        width: 100%;
+        margin-left: 50px;
+        margin-top: 0px;
+        float: left;
+    }
+    .fourt{
+        margin-top: 440px;
+        margin-bottom: 100px;
+    }
+    .fourt .image{
+        float: none;
+        width: 100%;
+    }
+    .fourt .image img{
+        width: 430px;
+    }
+    .fourt .txt{
+        width: 100%;
+        margin-left: 50px;
+        float: none;
+        text-align: left;
+    }
+    .fourt .txt div{
+        float: left;
+    }
+    .fourt .txt button{
+        float: left;
+    }
+    .fourt .txt .hr1{
+        float: left;    
+    }
+    .fourt .txt .hr2{
+        float:left;
+    }
+    .fourt .txt h5{
+        margin-top: 7px;
+    }
+    .last{
+        margin-bottom: 500px;
+    }
+    .last .right{
+        width: 100%;
+        float: none;
+        margin-left: 50px;
+    }
+    .last .contact{
+        width: 100%;
+        margin-left: 50px;
+        margin-top:35px;
+    }
+    .last .contact form{
+        margin-top: 30px;
+        width: 95%;
+    }
+    .last .contact form input{
+        width: 90%; 
+        margin-bottom: 10px;
+   }
+   .last .contact form button{
+    width:42%;
+    margin-right: 5%;
+   }
+   .hr3{
+    border: 1px solid gray;
+    width: 95%;
+    margin-left: 50px;
+    margin-bottom: 30px;
+   }
+ footer{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+   }
+
+   footer div{
+    margin-left: 20px;
+    margin-top: 10px;
+   }
+
+   footer .sabma{
+    margin-top: 10px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
